@@ -1,7 +1,7 @@
 import React from 'react';
 import NavBar from './navbar/navbar'
 import About from './About/About'
-import Welcome from './Welcome/Welcome'
+import WelcomeContainer from './Welcome/welcome_container'
 
 // import NavBar from './navbar/navbar';
 // import About from './navbar/about';
@@ -22,7 +22,7 @@ class App extends React.Component {
     return(
       <div>
         <Route path="/" component={ NavBar } />
-        <Route exact path="/" component={ Welcome } />
+        <Route exact path="/" component={ WelcomeContainer } />
         <Route path="/about" component={ About } />
       </div>
     );
